@@ -4,7 +4,7 @@ import propTypes from 'prop-types';
 import css from './ContactList.module.css';
 
 export const ContactList = ({ contacts, onDeleteContact }) => (
-  <div>
+  <>
     <ul>
       {contacts.map(contact => (
         <li key={nanoid()}>
@@ -18,7 +18,7 @@ export const ContactList = ({ contacts, onDeleteContact }) => (
         </li>
       ))}
     </ul>
-  </div>
+  </>
 );
 
 ContactList.propTypes = {
